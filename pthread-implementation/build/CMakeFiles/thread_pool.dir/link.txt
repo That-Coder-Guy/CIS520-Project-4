@@ -1,1 +1,0 @@
-/opt/software/software/GCCcore/11.2.0/bin/cc -std=c11 -Wall -Wextra -Wshadow -Werror -D_XOPEN_SOURCE=500 -pthread -rdynamic CMakeFiles/thread_pool.dir/src/main.c.o CMakeFiles/thread_pool.dir/src/thread_pool.c.o -o thread_pool 
