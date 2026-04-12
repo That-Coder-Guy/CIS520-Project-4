@@ -153,7 +153,6 @@ void find_largest_ascii(thread_job_t* job)
 /// Program entry point function.
 int main()
 {
-
     const size_t CHARACTERS_PER_READ = 1000000; 
 
     // Create a double buffer for reading from an input file

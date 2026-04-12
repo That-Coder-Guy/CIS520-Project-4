@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named thread_pool
+# Target rules for targets named pthread_implementation
 
 # Build rule for target.
-thread_pool: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 thread_pool
-.PHONY : thread_pool
+pthread_implementation: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pthread_implementation
+.PHONY : pthread_implementation
 
 # fast build rule for target.
-thread_pool/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/build
-.PHONY : thread_pool/fast
+pthread_implementation/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pthread_implementation.dir/build.make CMakeFiles/pthread_implementation.dir/build
+.PHONY : pthread_implementation/fast
 
 src/main.o: src/main.c.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/src/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pthread_implementation.dir/build.make CMakeFiles/pthread_implementation.dir/src/main.c.o
 .PHONY : src/main.c.o
 
 src/main.i: src/main.c.i
@@ -142,7 +142,7 @@ src/main.i: src/main.c.i
 
 # target to preprocess a source file
 src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/src/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pthread_implementation.dir/build.make CMakeFiles/pthread_implementation.dir/src/main.c.i
 .PHONY : src/main.c.i
 
 src/main.s: src/main.c.s
@@ -150,7 +150,7 @@ src/main.s: src/main.c.s
 
 # target to generate assembly for a file
 src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/src/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pthread_implementation.dir/build.make CMakeFiles/pthread_implementation.dir/src/main.c.s
 .PHONY : src/main.c.s
 
 src/thread_pool.o: src/thread_pool.c.o
@@ -158,7 +158,7 @@ src/thread_pool.o: src/thread_pool.c.o
 
 # target to build an object file
 src/thread_pool.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/src/thread_pool.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pthread_implementation.dir/build.make CMakeFiles/pthread_implementation.dir/src/thread_pool.c.o
 .PHONY : src/thread_pool.c.o
 
 src/thread_pool.i: src/thread_pool.c.i
@@ -166,7 +166,7 @@ src/thread_pool.i: src/thread_pool.c.i
 
 # target to preprocess a source file
 src/thread_pool.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/src/thread_pool.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pthread_implementation.dir/build.make CMakeFiles/pthread_implementation.dir/src/thread_pool.c.i
 .PHONY : src/thread_pool.c.i
 
 src/thread_pool.s: src/thread_pool.c.s
@@ -174,7 +174,7 @@ src/thread_pool.s: src/thread_pool.c.s
 
 # target to generate assembly for a file
 src/thread_pool.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_pool.dir/build.make CMakeFiles/thread_pool.dir/src/thread_pool.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pthread_implementation.dir/build.make CMakeFiles/pthread_implementation.dir/src/thread_pool.c.s
 .PHONY : src/thread_pool.c.s
 
 # Help Target
@@ -185,7 +185,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... thread_pool"
+	@echo "... pthread_implementation"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

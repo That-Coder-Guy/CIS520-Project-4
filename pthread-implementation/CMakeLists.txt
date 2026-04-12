@@ -8,4 +8,4 @@ set(CMAKE_C_FLAGS "-std=c11 -Wall -Wextra -Wshadow -Werror -D_XOPEN_SOURCE=500 -
 include_directories("${PROJECT_SOURCE_DIR}/include")
 
 # If you are running the Wikipedia file parser yourself via a main.c
-add_executable(thread_pool src/main.c src/thread_pool.c)
+add_executable(pthread_implementation src/main.c src/thread_pool.c)
