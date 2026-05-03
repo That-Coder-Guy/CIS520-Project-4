@@ -1,2 +1,6 @@
 /examples/
 /pthread-implementation/build/
+/openmp-implementation/build/
+/mpi-implementation/build/
+/pthread-implementation/testing/test_results/
+/pthread-implementation/testing/benchmark_summary.csv
